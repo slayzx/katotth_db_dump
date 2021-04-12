@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: katotth; Type: TABLE; Schema: public; Owner: osm
+-- Name: katotth; Type: TABLE; Schema: public; Owner: -
 --
 
 CREATE TABLE public.katotth (
@@ -38,10 +38,8 @@ CREATE TABLE public.katotth (
 );
 
 
-ALTER TABLE public.katotth OWNER TO osm;
-
 --
--- Name: katotth_id_seq; Type: SEQUENCE; Schema: public; Owner: osm
+-- Name: katotth_id_seq; Type: SEQUENCE; Schema: public; Owner: -
 --
 
 CREATE SEQUENCE public.katotth_id_seq
@@ -53,24 +51,22 @@ CREATE SEQUENCE public.katotth_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.katotth_id_seq OWNER TO osm;
-
 --
--- Name: katotth_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: osm
+-- Name: katotth_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
 --
 
 ALTER SEQUENCE public.katotth_id_seq OWNED BY public.katotth.id;
 
 
 --
--- Name: katotth id; Type: DEFAULT; Schema: public; Owner: osm
+-- Name: katotth id; Type: DEFAULT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.katotth ALTER COLUMN id SET DEFAULT nextval('public.katotth_id_seq'::regclass);
 
 
 --
--- Data for Name: katotth; Type: TABLE DATA; Schema: public; Owner: osm
+-- Data for Name: katotth; Type: TABLE DATA; Schema: public; Owner: -
 --
 
 COPY public.katotth (id, reg, distr, hrom, munic, distr_city, div_num, div_type, div_name, div_full_name) FROM stdin;
@@ -31836,14 +31832,14 @@ COPY public.katotth (id, reg, distr, hrom, munic, distr_city, div_num, div_type,
 
 
 --
--- Name: katotth_id_seq; Type: SEQUENCE SET; Schema: public; Owner: osm
+-- Name: katotth_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
 SELECT pg_catalog.setval('public.katotth_id_seq', 31758, true);
 
 
 --
--- Name: katotth katotth_pkey; Type: CONSTRAINT; Schema: public; Owner: osm
+-- Name: katotth katotth_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
 ALTER TABLE ONLY public.katotth
