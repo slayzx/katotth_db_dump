@@ -4,4 +4,4 @@ Dump of PostgreSQL table with codifier of administrative and territorial units a
 
 There is how is data looks like
 
-![Table screenshot](https://github.com/slayzx/katotth_db_dump/blob/main/db_katotth_view.jpg)
+![Table screenshot](https://github.com/slayzx/katotth_db_dump/blob/main/db_katotth_view.png)
